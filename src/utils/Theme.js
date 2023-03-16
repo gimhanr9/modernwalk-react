@@ -26,12 +26,12 @@ export const Theme = createTheme({
   typography: {
     h1: {
       fontFamily: Fonts.roboto,
-      fontSize: 36,
+      fontSize: 38,
       fontWeight: 700,
     },
     h2: {
       fontFamily: Fonts.roboto,
-      fontSize: 34,
+      fontSize: 36,
       fontWeight: 700,
     },
     h3: {
@@ -41,17 +41,17 @@ export const Theme = createTheme({
     },
     h4: {
       fontFamily: Fonts.roboto,
-      fontSize: 34,
+      fontSize: 20,
       fontWeight: 700,
     },
     h5: {
       fontFamily: Fonts.roboto,
-      fontSize: 28,
+      fontSize: 20,
       fontWeight: 700,
     },
     h6: {
       fontFamily: Fonts.roboto,
-      fontSize: 24,
+      fontSize: 18,
       fontWeight: 700,
     },
     subtitle1: {
