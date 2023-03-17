@@ -3,6 +3,7 @@ import { Card, CardContent, Typography, CardActionArea } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link as ReactLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { Colors } from '../../utils/Colors';
 
 const StyledCategoryCard = styled(Card)(({ theme }) => ({
   borderRadius: 24,
@@ -13,7 +14,11 @@ const StyledCategoryCard = styled(Card)(({ theme }) => ({
 
 const CategoryCard = ({ category, link }) => {
   return (
-    <StyledCategoryCard>
+    <StyledCategoryCard
+      sx={{
+        background: category === "Men's Clothing" ? Colors.green : Colors.pink,
+      }}
+    >
       <CardActionArea component={ReactLink} to={link}>
         <CardContent>
           <Typography variant='h3' align='center'>
@@ -27,6 +32,7 @@ const CategoryCard = ({ category, link }) => {
 
 CategoryCard.propTypes = {
   category: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default CategoryCard;

@@ -41,17 +41,17 @@ export const Theme = createTheme({
     },
     h4: {
       fontFamily: Fonts.roboto,
-      fontSize: 20,
+      fontSize: 18,
       fontWeight: 700,
     },
     h5: {
       fontFamily: Fonts.roboto,
-      fontSize: 20,
+      fontSize: 17,
       fontWeight: 700,
     },
     h6: {
       fontFamily: Fonts.roboto,
-      fontSize: 18,
+      fontSize: 15,
       fontWeight: 700,
     },
     subtitle1: {
@@ -66,8 +66,8 @@ export const Theme = createTheme({
     },
     body2: {
       fontFamily: Fonts.roboto,
-      fontSize: 18,
-      fontWeight: 500,
+      fontSize: 14,
+      fontWeight: 400,
     },
     caption: {
       fontFamily: Fonts.roboto,

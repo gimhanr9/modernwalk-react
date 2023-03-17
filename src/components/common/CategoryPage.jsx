@@ -7,10 +7,10 @@ const CategoryPage = ({ category, products }) => {
   return (
     <Box>
       <Typography variant='h4'>{category}</Typography>
-      <Box mt={2} />
-      <Grid container spacing={3}>
+      <Box mt={4} />
+      <Grid container spacing={3} columns={20} justifyContent='space-between'>
         {products.map((product, index) => (
-          <Grid key={index} item xs={12} sm={6} md={3}>
+          <Grid item key={index} xs={20} sm={6} md={4}>
             <ProductCard
               title={product.title}
               image={product.image}
