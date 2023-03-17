@@ -8,10 +8,16 @@ const CategoryPage = ({ category, products }) => {
     <Box>
       <Typography variant='h4'>{category}</Typography>
       <Box mt={2} />
-      <Grid container>
+      <Grid container spacing={3}>
         {products.map((product, index) => (
-          <Grid item>
-            <ProductCard />
+          <Grid key={index} item xs={12} sm={6} md={3}>
+            <ProductCard
+              title={product.title}
+              image={product.image}
+              price={product.price}
+              description={product.description}
+              category={category}
+            />
           </Grid>
         ))}
       </Grid>
