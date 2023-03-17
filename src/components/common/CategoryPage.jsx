@@ -16,7 +16,7 @@ const CategoryPage = ({ category, products }) => {
               image={product.image}
               price={product.price}
               description={product.description}
-              category={category}
+              category={product.category}
             />
           </Grid>
         ))}

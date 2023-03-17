@@ -1,6 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-let initialState = { products: [], loading: false, error: null };
+let initialState = {
+  products: [],
+  loading: false,
+  error: null,
+};
 
 export const ProductSlice = createSlice({
   name: 'products',
@@ -15,7 +19,6 @@ export const ProductSlice = createSlice({
 
 export default ProductSlice.reducer;
 
-export const fetchFlashSaleProducts = () => {};
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async (category) => {

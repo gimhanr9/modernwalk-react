@@ -35,7 +35,7 @@ const ProductCard = ({ title, image, price, description, category }) => {
       <StyledProductCard
         sx={{
           background:
-            category === "Men's Clothing" ? Colors.green : Colors.pink,
+            category === "men's clothing" ? Colors.green : Colors.pink,
         }}
       >
         <Box pl={4} pr={4} pt={1} pb={2}>
