@@ -1,27 +1,37 @@
 import React from 'react';
-import { AppBar, Toolbar, Box, Typography, Divider, Link } from '@mui/material';
+import { AppBar, Toolbar, Typography, Divider, Grid } from '@mui/material';
 import { Link as ReactLink } from 'react-router-dom';
+import { Colors } from '../../utils/Colors';
 
 const Header = () => {
   return (
-    <Box>
-      <AppBar position='static'>
-        <Toolbar>
-          <Typography
-            component={ReactLink}
-            to='/'
-            variant='h3'
-            align='center'
-            sx={{
-              textDecoration: 'none',
-            }}
-          >
-            Modern Walk
-          </Typography>
+    <div>
+      <AppBar
+        position='static'
+        elevation={0}
+        sx={{ background: Colors.background }}
+      >
+        <Toolbar disableGutters>
+          <Grid container display='flex' justifyContent='center'>
+            <Grid item>
+              <Typography
+                component={ReactLink}
+                to='/'
+                variant='h3'
+                align='center'
+                sx={{
+                  textDecoration: 'none',
+                  color: Colors.black,
+                }}
+              >
+                Modern Walk
+              </Typography>
+            </Grid>
+          </Grid>
         </Toolbar>
       </AppBar>
-      <Divider />
-    </Box>
+      <Divider sx={{ borderBottomWidth: 4 }} />
+    </div>
   );
 };
 

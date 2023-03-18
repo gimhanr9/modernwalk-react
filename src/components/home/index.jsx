@@ -37,10 +37,11 @@ const HomeComponent = () => {
       <Box mt={3} />
       <Typography variant='h4'>Categories</Typography>
       <Box mt={4} />
-      <Grid container spacing={4}>
+      <Grid container spacing={12}>
         <Grid item xs={12} sm={6}>
           <CategoryCard category="Men's Clothing" link='/mens-clothing' />
         </Grid>
+
         <Grid item xs={12} sm={6}>
           <CategoryCard category="Women's Clothing" link='/womens-clothing' />
         </Grid>

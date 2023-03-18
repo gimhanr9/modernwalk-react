@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, Box, Grid } from '@mui/material';
+import { Card, CardContent, Typography, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Colors } from '../../utils/Colors';
 import PropTypes from 'prop-types';
@@ -7,11 +7,12 @@ import PropTypes from 'prop-types';
 const StyledProductCard = styled(Card)(({ theme }) => ({
   borderRadius: 14,
   maxWidth: 240,
+  boxShadow: '2px 2px 5px -2px #888',
 }));
 
 const ProductCard = ({ title, image, price, description, category }) => {
   return (
-    <StyledProductCard sx={{ boxShadow: '2px 2px 5px -2px #888' }}>
+    <StyledProductCard>
       <CardContent>
         <Box sx={{ minHeight: 60 }}>
           <Typography

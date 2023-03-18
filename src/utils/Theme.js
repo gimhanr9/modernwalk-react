@@ -4,23 +4,27 @@ import { createTheme } from '@mui/material/styles';
 
 export const Theme = createTheme({
   palette: {
+    text: {
+      primary: Colors.white,
+      secondary: Colors.black,
+    },
     background: {
-      default: Colors.primaryBg,
-      secondary: Colors.secondaryBg,
+      default: Colors.black,
+      secondary: Colors.black,
       paper: Colors.white,
     },
 
     primary: {
-      main: '#2E2252',
+      main: '#ffffff',
       light: Colors.black,
       dark: Colors.black,
-      contrastText: Colors.white,
+      contrastText: Colors.black,
     },
     secondary: {
-      main: '#757ce8',
+      main: '#ffffff',
       light: Colors.black,
       dark: Colors.black,
-      contrastText: Colors.white,
+      contrastText: Colors.black,
     },
   },
   typography: {
@@ -36,8 +40,9 @@ export const Theme = createTheme({
     },
     h3: {
       fontFamily: Fonts.roboto,
-      fontSize: 32,
+      fontSize: 28,
       fontWeight: 700,
+      //color: '#ffffff',
     },
     h4: {
       fontFamily: Fonts.roboto,

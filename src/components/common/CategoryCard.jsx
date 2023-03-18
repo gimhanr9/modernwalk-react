@@ -7,6 +7,7 @@ import { Colors } from '../../utils/Colors';
 
 const StyledCategoryCard = styled(Card)(({ theme }) => ({
   borderRadius: 24,
+  boxShadow: '4px 4px 9px -2px #888',
   '& .MuiCardContent-root': {
     padding: theme.spacing(12),
   },
