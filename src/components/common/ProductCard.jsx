@@ -39,7 +39,7 @@ const ProductCard = ({ title, image, price, description, category }) => {
             category === "men's clothing" ? Colors.green : Colors.pink,
         }}
       >
-        <Box pl={4} pr={4} pt={1} pb={2}>
+        <Box pl={4} pr={4} pt={1} sx={{ minHeight: 98 }}>
           <Typography variant='h5' align='center' sx={{ color: Colors.blue }}>
             Rs {price}
           </Typography>

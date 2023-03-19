@@ -60,6 +60,7 @@ const HomeComponent = () => {
       >
         {products.map((product, index) => (
           <ProductCard
+            key={index}
             title={product.title}
             image={product.image}
             price={product.price}
