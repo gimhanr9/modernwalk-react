@@ -7,8 +7,15 @@ const Layout = (props) => {
   return (
     <React.Fragment>
       <Header />
-      <Box sx={{ height: '100vh', background: Colors.background }}>
-        <Box pl={8} pt={4} pr={7} className='main-content'>
+      <Box
+        sx={{
+          minHeight: '100vh',
+          height: '100%',
+
+          background: Colors.background,
+        }}
+      >
+        <Box pl={8} pt={2} pr={7} pb={9} className='main-content'>
           {props.children}
         </Box>
       </Box>

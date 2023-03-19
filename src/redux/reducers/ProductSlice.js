@@ -23,7 +23,7 @@ export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async (category) => {
     const response = await fetch(
-      `${process.env.REACT_APP_DATA_URL}/category/${category}`
+      `${process.env.REACT_APP_DATA_URL}/category/${category}?limit=10`
     );
 
     const products = await response.json();

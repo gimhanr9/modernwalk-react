@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { Colors } from '../../utils/Colors';
 
 const StyledCategoryCard = styled(Card)(({ theme }) => ({
-  borderRadius: 24,
+  borderRadius: 18,
   boxShadow: '4px 4px 9px -2px #888',
   '& .MuiCardContent-root': {
     padding: theme.spacing(12),
@@ -22,7 +22,7 @@ const CategoryCard = ({ category, link }) => {
     >
       <CardActionArea component={ReactLink} to={link}>
         <CardContent>
-          <Typography variant='h3' align='center'>
+          <Typography variant='h3' align='center' sx={{ color: Colors.white }}>
             {category}
           </Typography>
         </CardContent>

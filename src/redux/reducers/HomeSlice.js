@@ -22,7 +22,9 @@ export default HomeSlice.reducer;
 export const fetchFlashSaleProducts = createAsyncThunk(
   'home/fetchSaleProducts',
   async () => {
-    const response = await fetch(`${process.env.REACT_APP_DATA_URL}?limit=5`);
+    const response = await fetch(
+      `${process.env.REACT_APP_DATA_URL}?sort=asc&limit=10`
+    );
 
     const products = await response.json();
     return products;

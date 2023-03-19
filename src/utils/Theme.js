@@ -5,7 +5,7 @@ import { createTheme } from '@mui/material/styles';
 export const Theme = createTheme({
   palette: {
     text: {
-      primary: Colors.white,
+      primary: Colors.black,
       secondary: Colors.black,
     },
     background: {
@@ -40,23 +40,23 @@ export const Theme = createTheme({
     },
     h3: {
       fontFamily: Fonts.roboto,
-      fontSize: 28,
+      fontSize: 27,
       fontWeight: 700,
       //color: '#ffffff',
     },
     h4: {
       fontFamily: Fonts.roboto,
-      fontSize: 18,
+      fontSize: 17,
       fontWeight: 700,
     },
     h5: {
       fontFamily: Fonts.roboto,
-      fontSize: 17,
+      fontSize: 15,
       fontWeight: 700,
     },
     h6: {
       fontFamily: Fonts.roboto,
-      fontSize: 15,
+      fontSize: 13,
       fontWeight: 700,
     },
     subtitle1: {
@@ -71,7 +71,7 @@ export const Theme = createTheme({
     },
     body2: {
       fontFamily: Fonts.roboto,
-      fontSize: 14,
+      fontSize: 11,
       fontWeight: 400,
     },
     caption: {

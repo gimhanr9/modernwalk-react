@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const StyledProductCard = styled(Card)(({ theme }) => ({
   borderRadius: 14,
-  maxWidth: 240,
+  maxWidth: 230,
   boxShadow: '2px 2px 5px -2px #888',
 }));
 
@@ -14,7 +14,7 @@ const ProductCard = ({ title, image, price, description, category }) => {
   return (
     <StyledProductCard>
       <CardContent>
-        <Box sx={{ minHeight: 60 }}>
+        <Box sx={{ minHeight: 55 }}>
           <Typography
             variant='h6'
             align='center'
@@ -29,7 +29,7 @@ const ProductCard = ({ title, image, price, description, category }) => {
           </Typography>
         </Box>
         <Box display='flex' justifyContent='center'>
-          <img src={image} alt='product' height={90} width={80} />
+          <img src={image} alt='product' height={73} width={65} />
         </Box>
       </CardContent>
 
@@ -40,10 +40,10 @@ const ProductCard = ({ title, image, price, description, category }) => {
         }}
       >
         <Box pl={4} pr={4} pt={1} pb={2}>
-          <Typography variant='h5' align='center'>
+          <Typography variant='h5' align='center' sx={{ color: Colors.blue }}>
             Rs {price}
           </Typography>
-          <Box mt={1} />
+
           <Typography
             variant='body2'
             align='center'
